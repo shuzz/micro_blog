@@ -1,4 +1,4 @@
-import static org.junit.Assert.*;
+ï»¿import static org.junit.Assert.*;
 
 import org.junit.Test;
 
@@ -7,7 +7,7 @@ public class Micro_Blog {
 	
 	public boolean sendMessage(String x){
 		if (!(x.isEmpty())&&(x.length() < 11)){
-			String y = x; // çàïèñûâàåì ñòðî÷êó â áëîã
+			String y = x; // Ð·Ð°Ð¿Ð¸ÑÑ‹Ð²Ð°ÐµÐ¼ ÑÑ‚Ñ€Ð¾Ñ‡ÐºÑƒ Ð² Ð±Ð»Ð¾Ð³
 			return true;
 		}
 		else
