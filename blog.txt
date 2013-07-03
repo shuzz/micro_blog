@@ -1,0 +1,21 @@
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+
+public class Micro_Blog {
+	
+	
+	
+	@Test
+	public void test() {
+		String messageText = "repppp--999999r";
+		if ((messageText.isEmpty())||(messageText.length() > 10)){
+			fail("Test neeeee");
+			System.out.println("Test ne uspeshen");
+		}
+		else
+			System.out.println("Test uspeshen");
+	}
+
+}
