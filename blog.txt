@@ -5,17 +5,20 @@ import org.junit.Test;
 
 public class Micro_Blog {
 	
-	
-	
-	@Test
-	public void test() {
-		String messageText = "repppp--999999r";
-		if ((messageText.isEmpty())||(messageText.length() > 10)){
-			fail("Test neeeee");
-			System.out.println("Test ne uspeshen");
+	public boolean sendMessage(String x){
+		if (!(x.isEmpty())&&(x.length() < 11)){
+			String y = x; // записываем строчку в блог
+			return true;
 		}
 		else
-			System.out.println("Test uspeshen");
+			return false;
 	}
-
+	
+	@Test
+	
+	public void test() {
+		assertTrue("Test uspeshen", sendMessage("123456"));
+		assertTrue("Test uspeshen", !sendMessage("1234567891011"));
+		assertTrue("Test uspeshen", !sendMessage(""));
+	}
 }
